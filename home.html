@@ -1,0 +1,256 @@
+<?php
+// Starting session
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+            <title>home</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="home.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          </head>
+    <body bgcolor="#E5E8E8  ">
+
+
+    
+    <div class="container">
+        <img src=".\Im\User_Avatar-05-128.png">
+        <h1>HOTEL SABA</h1>
+        
+		<?php
+			 //retrieve data
+							   ?>
+  
+        
+        
+        
+        <?php
+        //if($_SESSION["uname"])
+           //if(!isset($_SESSION["uname"]))
+
+       $uname=isset($_POST['uname']); 
+        //if($_SESSION["uname"] = $uname)
+            if(isset($_SESSION["uname"]))
+        { ?>
+        <h4 style="margin-left:1100px;">   
+    <?php  echo $_SESSION['uname'];?></h4>
+        
+        <a href="logout.php" style="margin-left:1150px;"> 
+            <?php echo "LOGOUT";?></a>
+        <?php
+              
+           
+         
+        }
+        else
+        {
+         echo '<a href="login.html">LOGIN</a>';
+        }   
+    
+        ?>
+        
+        
+        <br>
+        <br>
+        <br></div>
+        
+    
+        
+    
+        <div class="navbar">
+            <a href="home.php"> HOME</a>
+            <a href="events.php"> EVENTS </a>
+          
+            <?php
+            if(isset($_SESSION["uname"]))
+        { 
+            ?>
+    
+            <a href="bookroom.php">BOOKROOM</a>
+            <?php
+            }
+        else
+        {   
+            ?>
+              <a href="login.html">BOOKROOM</a>
+        <?php
+        }   
+    
+        ?>
+                  
+
+        <a href="gallery.php"> GALLERY</a>
+     
+            <a href="about.php"> ABOUT</a>
+                </div><br><br>
+        
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src=".\Im\78.jpg" style="width:100%">
+  <div class="text" style="color: black;font-size: 30px;font-family: monospace;font-display: block;font-style: oblique;font-kerning: auto;">Restarent & Bars</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src=".\Im\88.JPG" style="width:100%">
+  <div class="text" style="color: black;font-size: 30px;font-family: monospace;font-display: block;font-style: oblique;font-kerning: auto;">Events & meetings</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src=".\Im\23.jpg" style="width:100%">
+    <div class="text" style="color: black;font-size: 30px;font-family: monospace;font-display: block;font-style: oblique;font-kerning: auto;"><a href="bookroom.php" style="color:white">Rooms & Suits</a></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10094;</a>
+
+</div>
+        <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+                   <div class="details">
+            <table  class="table3" border="0" style="top:180px;position:fixed:">
+            
+                
+                
+                <tr><td> <div class="m1"  style="background:#000000;border-radius:6px;">
+                    
+                    
+                    
+         <?php
+         if(isset($_SESSION["uname"]))
+        {
+          ?>
+        <a href="mybookings.php" style="color:white">MYBOOKINGS</a>
+        <?php
+         }
+        else
+        {
+        ?>
+        <a href="login.html" style="color:white">MYBOOKINGS</a>
+        <?php
+        }
+        ?>
+                    
+                    
+                    </div></td></tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"> <a href="chefs.php" style="color:white;">CHEFSINFO</a></div></td></tr>
+                
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="viewfeedback.php" style="color:white">VIEW FEEDBACK</a></div> </td></tr>
+                
+                
+     
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="givefeedback.php" style="color:white">GIVE FEEDBACK</a> </div></td></tr></table>
+        </div>
+        
+        <center>
+        <div class="images">
+        <table class="table2" border="0">
+      
+        <tr><td>
+        <div class="viewfeedback">
+                <img src="./Im/images.jpg"><br>
+            <a href="viewfeedback.php"><input type="button" value="view"></a></div>
+            </td>
+                <td><div class="contactus">
+                    <img src="./Im/contactus.png"><br><a href="about.php">
+                    <input type="button" value="contact"></a></div>   </td>       
+            <td>
+                <div class="chefsinfo"><img src="./Im/chefs.png"><br>
+                    <a href="chefs.php"><input type="button" value="view"></a></div></td></tr></table>
+        </div>
+        </center>
+  
+         <div class="logos">
+            <table  class="table1" border="0">
+                
+                <tr><td><h5 style="color:black"><center>FOLLOW</center></h5></td></tr>
+                <tr><td> <a href="https://www.facebook.com/"><img src="./logos/facebook.png" ></a></td></tr>
+                <tr><td><a href="https://www.instagram.com/"><img src="./logos/insta.png"></a> </td></tr>
+                <tr><td> <a href="https://twitter.com/login?lang=en"><img src="./logos/twitter.png"></a></td></tr>
+                <tr><td><a href="https://www.youtube.com/"><img src="./logos/youtube.png"></a> </td></tr></table>
+        </div>
+    
+                    
+                    
+        <div class="footer">
+            <h5> 2k18 VeeTechnology-ALLRIGHTS RESERVED....!</h5>
+        </div>
+        
+        
+
+        
+   <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = container1.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+    
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+ </body>
+ </html>

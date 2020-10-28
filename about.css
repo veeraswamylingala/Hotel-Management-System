@@ -1,0 +1,273 @@
+body
+{
+background-repeat: no-repeat;
+    background-size:cover;
+     margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom:0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+
+    
+ }
+.veera
+{
+    background:rgba(0,0,0,0.7);
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+}
+.container
+ {
+	 width:1265px;
+	 height:110px;
+     margin-top: 0px;
+     margin-left: 0px;
+	 background:	rgba(0,0,0,0.7);
+     border-radius: 15px;
+     text-align: center;
+ }
+  .container a
+ {
+
+	 margin-left:1250px;
+	 color:white;
+ }
+ 
+.container img
+{
+    height:110px;
+    width:120px;
+    margin-top: 0px;
+    margin-left: -380px;
+    margin-right: 0px;
+}
+.container h1
+{
+    color: bisque;
+    margin-top: -80px;
+    
+}
+
+
+.container1
+{
+    width:1270px;
+    height: 30px;
+    margin-top: 10px;
+     margin-left: 0px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 15px;
+     text-align: center;
+ 
+}
+
+.container1  a
+ {
+    color: azure;
+     margin-top: -20px;
+     margin-left: 10px;
+     margin-right: 10px;
+	 background:;
+     border-radius: 40px;
+     text-align: center;
+         float:center;
+     text-decoration: none;
+     
+    
+}
+
+.details
+{
+     margin-top: 20px;
+    margin-right: 0px;
+    color: aqua;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    top:30px;
+}
+
+
+.details a
+{
+    color:whitesmoke;
+    cursor: pointer;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color:;
+    font-weight:200;
+    text-indent: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.details table.table3
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    top: 290px;
+    position: fixed;
+}
+.logos
+{
+    margin-top: 10px;
+    margin-right: 59px;
+    color: aqua;
+    margin-left: 1200px;
+    margin-bottom: 200px;
+    top:0px;
+}
+.logos table.table1
+{
+    top: 180px;
+    position: fixed;
+}
+
+
+table.table1 img
+{
+    height: 40px;
+    width: 35px;
+    margin-top: px;
+    
+}
+.con
+ {
+	 width:600px;
+	 height:200px;
+     margin-top: 50px;
+     margin-left: 300px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 10px;
+     text-align: center;
+     
+ }
+
+.box1
+{
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.7);
+    color:azure;
+    float: left;
+    border: #ffffff;
+}
+.box1:hover
+{
+    background: #1fc;
+    color: black;
+    border: 30px;
+}
+.box2
+{ 
+    
+    margin-left: 200px;
+    margin-top: 0px;
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.7);
+    color:azure;
+    border: 30px;
+
+}
+.box2:hover
+{
+    background: #f31;
+    color: black;
+}
+.box3
+{
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: -200px;
+    background: rgba(0,0,0,0.7);
+    color:azure;
+    
+}
+.box3:hover
+{
+    background: #88f;
+    color: black;
+}
+.container3
+ {
+	 width:400px;
+	 height:200px;
+     margin-top: 0px;
+     margin-left: 500px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 10px;
+     text-align: center;
+     
+ }
+
+.box4
+{
+    width: 200px;
+    height: 200px;
+    
+    background: rgba(0,0,0,0.7);
+    color:azure;
+    float: left;
+    border: #ffffff;
+}
+.box4:hover
+{
+    background: #2ff;
+    color: black;
+}
+.box5
+{ 
+    
+    margin-left: 200px;
+    margin-top: 0px;
+    width: 200px;
+        height: 200px;
+    background: rgba(0,0,0,0.7);
+    color:azure;
+}
+.box5:hover
+{
+    background: #ff0;
+    color: black;
+}
+.container4
+ {
+	 width:200px;
+	 height:200px;
+     margin-top: 0px;
+     margin-left: 700px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 10px;
+     text-align: center;
+     
+ }
+
+.box6
+{
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.7);
+    color:azure;
+    float: left;
+    border: #ffffff;
+}
+.box6:hover
+{
+    background: #f1f;
+    color: black;
+}
+.footer
+{
+    background: rgba(0,0,0,0.7);
+    width: 1260px;
+    height: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}

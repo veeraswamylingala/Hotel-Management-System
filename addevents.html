@@ -1,0 +1,64 @@
+
+<?php
+// Starting session
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+            <title>login</title>
+<link rel="stylesheet" href="admin.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          </head>
+    
+<body background="" >
+    <form methos="post" action="currentevents1.php">
+
+        <div class="container">
+        <img src=".\Im\User_Avatar-05-128.png">
+        <h1>HOTEL SABA</h1>
+           <h3><?php
+			echo  $_SESSION['uname']; //retrieve data
+							   ?></a></h3>
+        <br>
+        <br>
+        <br></div>
+    
+    
+        <div class="container1">
+            <a href="home.html"> HOME</a>
+            <a href="events.html"> EVENTS </a>
+        <a href="login.html"> BOOKROOM</a>
+        <a href="gallery.html"> GALLERY</a>
+     
+            <a href="about.html"> ABOUT</a>
+                </div>
+
+    <div class="adminbox">
+        
+        <a href="adminevents.html">EVNETS</a>
+            <a href="adminevents.html">BOOKINGS</a>
+        <a href="logindetails.html">LOGINDETAILS </a>
+        <a href="addimages.html">ADDIMAGES</a>
+          <a href="offers.html">OFFERS</a>    
+
+        
+        <div class="adminevents">
+    <input type="button" value="curentevents">
+    <input type="button" value="Addevent" >
+    <input type="button" value="removeevents" >
+      </div>    
+    </div>
+    
+
+    
+    
+    
+           
+
+     </form>
+
+
+ </body>
+ </html>

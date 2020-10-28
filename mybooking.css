@@ -1,0 +1,244 @@
+
+body
+{
+
+background-repeat: no-repeat;
+    background-size:cover;
+     margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom:0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    
+    
+ }
+.container
+ {
+	 width:150x;
+	 height:120px;
+     margin-top: 0px;
+     margin-left: 0px;
+	 background:	#404040;
+     border-radius: 5px;
+     text-align: center;    
+ }
+
+
+  .container a
+ {
+
+     margin-bottom: 0px;
+	 margin-left:1200px;
+	 color:white;
+     text-decoration: none;
+     font-family: "Times New Roman", Times, serif;
+ }
+ 
+.container img
+{
+    height:110px;
+    width:120px;
+    margin-top: 0px;
+    margin-left: -380px;
+    margin-right: 0px;
+}
+.container h1
+{
+    color: bisque;
+    margin-top: -80px;
+    
+}
+
+
+.details
+{
+     margin-top: 20px;
+    margin-right: 0px;
+    color: aqua;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    top:30px;
+}
+
+
+.details a
+{
+    color:whitesmoke;
+    cursor: pointer;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color:;
+    font-weight:200;
+    text-indent: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.details table.table3
+{
+    margin-top: 30px;
+    top: 290px;
+    position: fixed;
+}
+
+.logos
+{
+    margin-top: 10px;
+    margin-right: 59px;
+    color: aqua;
+    margin-left: 1200px;
+    margin-bottom: 200px;
+    top:0px;
+}
+.logos table.table1
+{
+    top: 180px;
+    position: fixed;
+}
+
+
+table.table1 img
+{
+    height: 40px;
+    width: 35px;
+    margin-top: px;
+    
+}
+
+
+.navbar
+{
+
+    width:1250;
+    height: 25px;
+    margin-top: 8px;
+     margin-left: 0px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 5px;
+     text-align: center;  
+       
+ 
+}
+
+.navbar  a
+ {
+    color: azure;
+     margin-top: -20px;
+     margin-left: 10px;
+     margin-right: 10px;
+	 background:;
+     border-radius: 40px;
+     text-align: center;
+     text-decoration: none;
+         float:center;
+     font-family: "Times New Roman", Times, serif;
+       
+}
+.output
+{
+    margin-left: 400px;
+    background: #000000;
+}
+
+
+
+
+
+.footer
+
+{
+    width:120x;
+	 height:20px;
+     margin-top: 450px;
+     margin-left: 0px;
+    margin-bottom: 30px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 5px;
+     text-align: center;
+    bottom: 0px;
+}
+.footer h5
+{
+    color: aliceblue;
+  
+}
+
+
+.viewfeedback
+{
+   width:350px;
+    height: 350px;
+    margin-top: 10px;
+     margin-left: 10px;
+	 background:	#ffffff;
+     border-radius: 40px;
+     text-align: center;  
+       
+}
+
+.viewfeedback img
+{
+    height:200px;
+    width: 200px;
+    
+}
+.contactus
+{
+    width:350px;
+    height: 350px;
+    margin-top: 10px;
+     margin-left: 10px;
+	 background:	#ffffff;
+     border-radius: 40px;
+     text-align: center;  
+       
+}
+.contactus img
+{
+    height:200px;
+    width: 200px;
+    
+}
+.chefsinfo 
+{
+    width:350px;
+    height: 350px;
+    margin-top: 10px;
+     margin-left: 10px;
+	 background:	#ffffff;
+     border-radius: 40px;
+     text-align: center;  
+       
+}
+.chefsinfo img
+{
+    height:200px;
+    width: 200px;
+    
+}
+.images input[type="button"]
+{
+	padding: 8px 15px;
+    background: #000000;
+    color: #ffff;
+    border: 20px;;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: poniter;
+     font-family: "Times New Roman", Times, serif;
+
+}
+
+
+.images table.table2 
+{
+    margin-top: 100px;
+}
+

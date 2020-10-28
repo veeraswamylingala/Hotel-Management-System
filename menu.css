@@ -1,0 +1,60 @@
+
+body
+{
+
+background-repeat: no-repeat;
+    background-size:cover;
+    
+ }
+.container
+ {
+	 width:1350px;
+	 height:150px;
+     margin-top: 0px;
+     margin-left: 0px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 15px;
+     text-align: center;
+ }
+.container img
+{
+    height:150px;
+    width:160px;
+    margin-top: 0px;
+    margin-left: -380px;
+    margin-right: 0px;
+}
+.container h1
+{
+    color: bisque;
+    margin-top: -80px;
+    
+}
+
+
+.container1
+{
+    width:1350px;
+    height: 30px;
+    margin-top: 10px;
+     margin-left: 0px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 15px;
+     text-align: center;
+ 
+}
+
+.container1  a
+ {
+    color: azure;
+     margin-top: -20px;
+     margin-left: 10px;
+     margin-right: 10px;
+	 background:rgba(0,0,0,0.7);
+     border-radius: 40px;
+     text-align: center;
+         float:center;
+     
+    
+}
+.

@@ -1,0 +1,174 @@
+<?php
+// Starting session
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+            <title>about</title>
+<link rel="stylesheet" href="bookroom.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          </head>
+<form method="post" action="bookroom1.php">    
+<body background=".\Im\0.jpg" >
+
+
+<div class="container">
+        <img src=".\Im\User_Avatar-05-128.png">
+        <h1>HOTEL SABA</h1>
+		    
+        <?php
+    
+       $uname=isset($_POST['uname']); 
+    
+    if(isset($_SESSION["uname"])&& $_SESSION["uname"]=='Admin')
+            {
+?>                
+    <a href="admin.php">
+    <h4 style="margin-left:107px;
+               text-decoration:none;">
+        <?php  echo $_SESSION['uname'];?>
+        </h4>
+    </a>
+        
+    
+        <a href="logout.php" style="margin-left:115px;"> 
+            <?php echo "LOGOUT";?></a>
+        <?php
+            }
+    elseif(isset($_SESSION["uname"]))
+    {
+        ?>
+
+        <h4 style="margin-left:107px;
+               text-decoration:none;">
+        <?php  echo $_SESSION['uname'];?>
+        </h4>
+
+    
+    
+        <a href="logout.php" style="margin-left:115px;"> 
+            <?php echo "LOGOUT";?></a>
+    <?php
+         
+        }
+        else
+        {
+?>
+    <a href="login.php" style="margin-top:0px;">
+    <?php echo "LOGIN";?></a>
+        }   
+    
+        ?>
+	
+
+        <br>
+        <br>
+        <br></div>
+		
+		 <div class="container1">
+            <a href="home.php"> HOME</a>
+            <a href="events.php"> EVENTS </a>
+      <?php
+            if(isset($_SESSION["uname"]))
+        { 
+            ?>
+    
+            <a href="bookroom.php">BOOKROOM</a>
+            <?php
+            }
+        else
+        {   
+            ?>
+              <a href="login.html">BOOKROOM</a>
+        <?php
+        }   
+    
+        ?>
+        <a href="gallery.php"> GALLERY</a>
+           
+            <a href="about.html"> ABOUT</a>
+			
+                </div>
+     <div class="details">
+            <table  class="table3" border="0" style="top:180px;position:fixed:">
+            
+                
+                
+                <tr><td> <div class="m1"  style="background:#000000;border-radius:6px;">
+                    
+                    
+                    
+         <?php
+         if(isset($_SESSION["uname"]))
+        {
+          ?>
+        <a href="mybookings.php" style="color:white">MYBOOKINGS</a>
+        <?php
+         }
+        else
+        {
+        ?>
+        <a href="login.html" style="color:white">MYBOOKINGS</a>
+        <?php
+        }
+        ?>
+                    
+                    
+                    </div></td></tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"> <a href="chefs.php" style="color:white;">CHEFSINFO</a></div></td></tr>
+                
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="viewfeeback.html" style="color:white">VIEW FEEDBACK</a></div> </td></tr>
+                
+                
+     
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="givefeedback.php" style="color:white">GIVE FEEDBACK</a> </div></td></tr></table>
+        </div>
+    <div class="logos">
+            <table  class="table1" border="0">
+                
+                <tr><td><h5 style="color:black"><center>FOLLOW</center></h5></td></tr>
+                <tr><td> <a href="https://www.facebook.com/"><img src="./logos/facebook.png" ></a></td></tr>
+                <tr><td><a href="https://www.instagram.com/"><img src="./logos/insta.png"></a> </td></tr>
+                <tr><td> <a href="https://twitter.com/login?lang=en"><img src="./logos/twitter.png"></a></td></tr>
+                <tr><td><a href="https://www.youtube.com/"><img src="./logos/youtube.png"></a> </td></tr></table>
+        </div>
+				
+				<div class="div">
+				<br>
+				<h2>BOOK YOUR ROOM</h2>
+				<h4>Signin Before Booking</h4>
+			
+				<table border=0>
+				<tr>
+				<td>CHECKIN</td><td><input type="date" name="checkin" placeholder="CHECKIN"required></td><br></tr>
+				<tr><td>CHECKOUT</td><td><input type="date" name="checkout" placeholder="CHECKOUT "required></td><br></tr>
+				<tr><td>ROOMS</td><td><input type="int" name="rooms" placeholder="ROOMS "required></td><br></tr>
+				
+				</table>
+				 <input type="submit" value="BOOKROOM">				</div>
+        
+		            
+        <div class="footer">
+            <h5> 2k18 VeeTechnology-ALLRIGHTS RESERVED....!</h5>
+        </div>
+        
+     </form>
+
+
+
+ </body>
+ </html>
+ 
+ 

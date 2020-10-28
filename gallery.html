@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+            <title>gallery</title>
+<link rel="stylesheet" href="gallery.css">
+       <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+ 
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+       
+          </head>
+    <body>
+	<div class="container">
+        <img src=".\Im\User_Avatar-05-128.png">
+        <h1>HOTEL SABA</h1>
+		
+            
+        <?php
+        //if($_SESSION["uname"])
+           //if(!isset($_SESSION["uname"]))
+session_start();
+       $uname=isset($_POST['uname']); 
+        //if($_SESSION["uname"] = $uname)
+            if(isset($_SESSION["uname"]))
+        { ?>
+        <h4 style="margin-left:1070px;">   <?php  echo $_SESSION['uname'];?></h4>
+        
+        <a href="logout.php" style="margin-left:1150px;"> 
+            <?php echo "LOGOUT";?></a>
+        <?php
+              
+           
+         
+        }
+        else
+        {
+         echo '<a href="login.html">LOGIN</a>';
+        }   
+    
+        ?>
+        <br>
+        <br>
+        <br></div>
+    
+    
+        <div class="container1">
+            <a href="home.php"> HOME</a>
+            <a href="events.php"> EVENTS </a>
+        <?php
+            if(isset($_SESSION["uname"]))
+        { 
+            ?>
+    
+            <a href="bookroom.php">BOOKROOM</a>
+            <?php
+            }
+        else
+        {   
+            ?>
+              <a href="login.html">BOOKROOM</a>
+        <?php
+        }   
+    
+        ?>
+        <a href="gallery.php"> GALLERY</a>
+            
+            <a href="about.php"> ABOUT</a>
+                </div>
+         <div class="logos">
+            <table  class="table1" border="0">
+                
+                <tr><td><h5 style="color:black"><center>FOLLOW</center></h5></td></tr>
+                <tr><td> <a href="https://www.facebook.com/"><img src="./logos/facebook.png" ></a></td></tr>
+                <tr><td><a href="https://www.instagram.com/"><img src="./logos/insta.png"></a> </td></tr>
+                <tr><td> <a href="https://twitter.com/login?lang=en"><img src="./logos/twitter.png"></a></td></tr>
+                <tr><td><a href="https://www.youtube.com/"><img src="./logos/youtube.png"></a> </td></tr></table>
+        </div>
+          <div class="details">
+            <table  class="table3" border="0" style="top:180px;position:fixed:">
+            
+                
+                
+                <tr><td> <div class="m1"  style="background:#000000;border-radius:6px;">
+                    
+                    
+                    
+         <?php
+         if(isset($_SESSION["uname"]))
+        {
+          ?>
+        <a href="mybookings.php" style="color:white">MYBOOKINGS</a>
+        <?php
+         }
+        else
+        {
+        ?>
+        <a href="login.html" style="color:white">MYBOOKINGS</a>
+        <?php
+        }
+        ?>
+                    
+                    
+                    </div></td></tr>
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"> <a href="chefs.php" style="color:white;">CHEFSINFO</a></div></td></tr>
+                
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="viewfeeback.html" style="color:white">VIEW FEEDBACK</a></div> </td></tr>
+                
+                
+     
+                <tr><td><div class="m1"  style="background:#000000;border-radius:6px;"><a href="givefeedback.php" style="color:white">GIVE FEEDBACK</a> </div></td></tr></table>
+        </div>
+
+        
+        <div class="BOX">
+        <h2>HOTEL PICS</h2>
+        <div class="hotelpics">
+            <table border="0">
+                <tr><td>
+            <div> <figure><img src=".\Im\accomodation-bed-hotel-97083.jpg" ></figure>
+            <span>00001</span>
+            </div>
+                    </td><td>
+            <div><figure><img src=".\Im\90.jpg">
+                <span>00002</span></figure>
+            </div>
+                    </td><td>
+                
+            <div><figure><img src=".\Im\12.jpg">
+                <span>00003</span></figure>
+                    </div></td>
+<td>
+                
+            <div><figure><img src=".\Im\12.jpg">
+                <span>00003</span></figure>
+                    </div></td>
+                
+                
+                </tr></table>
+        </div>
+
+        <h2>BEDROOMS</h2>
+        <div class="bedrooms">
+            <table border="0">
+            <tr><td>
+        <div> <figure><img src=".\Im\accomodation-bed-hotel-97083.jpg" >
+            </figure> <span>dsuidfguikjg</span>
+                </div></td>
+            <td>
+            <div><figure><img src=".\Im\90.jpg">
+                </figure>    <span>00002</span>
+                </div></td>
+    <td>
+                
+            <div><figure><img src=".\Im\12.jpg">
+                </figure>        <span>00003</span>
+        </div></td>
+                <td>
+                
+            <div><figure><img src=".\Im\12.jpg">
+                <span>00003</span></figure>
+                    </div></td>
+</tr></table>
+        </div>
+ 
+
+               <h2>EVENTS</h2>
+        <div class="events">
+            <table border="0">
+                
+            <tr><td>  
+                <div><figure> <img src=".\Im\accomodation-bed-hotel-97083.jpg" >
+            </figure> <span>00001</span>
+            </div>
+                
+            </td><td>
+                
+            <div><figure><img src=".\Im\13.jpg">
+                </figure><span>00002</span>
+            </div>
+                </td> <td>
+            <div><figure> <img src=".\Im\13.jpg">
+                </figure> <span>00003</span>
+                    </div></td>
+                <td>
+                
+            <div><figure><img src=".\Im\12.jpg">
+                <span>00003</span></figure>
+                    </div></td>
+</tr></table>
+        </div>
+        </div>
+
+
+
+    
+  <div class="footer">
+            <h5> 2k18 VeeTechnology-ALLRIGHTS RESERVED....!</h5>
+        </div>
+    </body>
+</html>
